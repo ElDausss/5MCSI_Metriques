@@ -18,6 +18,10 @@ def MaPremiereAPI():
 def mongraphique():
     return render_template("graphique.html")
 
+@app.route("/formulaire/")
+def formulaire():
+    return render_template("formulaire.html")
+
 @app.route('/tawarano/')
 def meteo():
     response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx')
